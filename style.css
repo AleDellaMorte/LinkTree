@@ -140,6 +140,10 @@ footer p {
     letter-spacing: 3px;
 }
 
+::selection {
+  color: var(--txt);
+  background: var(--main);
+}
 
 /*----------phones----------*/
 
