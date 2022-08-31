@@ -14,7 +14,6 @@ var konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', '
 var konamiPos = 0;
   
 document.addEventListener('keydown', function(e) {
-    console.log(e.key);
     var key = e.key;
     var requiredKey = konamiCode[konamiPos];
     if (key === requiredKey) {
