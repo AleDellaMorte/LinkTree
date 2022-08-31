@@ -9,15 +9,6 @@
     --none: rgba(255, 255, 255, 0);
 }
 
-.light {
-    --bg: #FFFFFF;
-    --txt: #3A354D;
-    --main: #7F77E0;
-    --secondary: #9598A6;
-    --transp: rgba(58, 53, 77, .8);
-    --none: rgba(58, 53, 77, 0);
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -58,7 +49,7 @@ header {
 header,
 header h1,
 header img {
-    transition: all .7s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 header h1 {
