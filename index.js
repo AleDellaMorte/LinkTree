@@ -7,3 +7,27 @@ window.addEventListener("scroll", () => {
         head.classList.remove("scrolled");
     }
 });
+
+/*-----KonamiCode-----*/
+var konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+  
+var konamiPos = 0;
+  
+document.addEventListener('keydown', function(e) {
+    console.log(e.key);
+    var key = e.key;
+    var requiredKey = konamiCode[konamiPos];
+    if (key === requiredKey) {
+        konamiPos++;
+        if (konamiPos === konamiCode.length) {
+        easterEgg();
+        konamiPos = 0;
+        }
+    } else {
+        konamiPos = 0;
+    }
+    });
+  
+function easterEgg() {
+    window.location.href = "https://youtu.be/dQw4w9WgXcQ";
+}
