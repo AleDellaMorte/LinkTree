@@ -115,7 +115,8 @@ header img {
     transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
     transform: scale(1.02);
 }
 
@@ -166,6 +167,10 @@ footer p {
 
     .linkCont {
         width: 80vw;
+    }
+    
+    .link:active {
+        transform: scale(1.02);
     }
 }
 
