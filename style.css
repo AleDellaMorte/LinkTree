@@ -113,6 +113,8 @@ header img {
     border-radius: 69rem;
     padding: 2rem;
     transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+    user-select: none;
+    cursor: pointer;
 }
 
 .link:hover,
@@ -131,6 +133,59 @@ header img {
     transform: translate(-50%, -50%);
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.list {
+    background-color: var(--main) !important;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+.list input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.list i {
+    transition: .5s;
+    transform: rotateX(0deg);
+}
+.list input:checked ~ i{
+    transform: rotateX(180deg);
+}
+
+.listCont {
+    transition: .5s;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 3em;
+    display: flex;
+    overflow: hidden;
+    height: 60px;
+}
+.listCont div{
+    opacity: 0;
+}
+
+.listCont a {
+    transition: transform 0.3s;
+    transition-delay: var(--del);
+    transform: scale(0);
+}
+.opened a {
+    transform: scale(1);
+}
+
+.listCont > .link {
+    width: 85%;
+}
+
+.opened{
+    display: flex;
+    height: 520px;
 }
 
 footer {
