@@ -160,7 +160,7 @@ header img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: clamp(150px, 50vw, 1000px);
     gap: 3em;
     display: flex;
     overflow: hidden;
@@ -222,6 +222,20 @@ footer p {
 
     .linkCont {
         width: 80vw;
+    }
+
+    .listCont {
+        width: clamp(150px, 100vw, 1000px);
+    }
+    .opened a {
+        transform: scale(.8);
+    }
+
+    .listCont .link:hover {
+        transform: scale(.85);
+    }
+    .listCont .link:active {
+        transform: scale(.85);
     }
     
     .link:active {
