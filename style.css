@@ -15,6 +15,7 @@
     text-decoration: none;
     color: var(--txt);
     font-family: 'Inter', sans-serif;
+    user-select: none;
 }
 
 body {
