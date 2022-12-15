@@ -1,4 +1,3 @@
-/*-----Scroll-----*/
 window.addEventListener("scroll", () => {
     let head = document.querySelector(".head");
     let screenPos = window.scrollY;
@@ -8,19 +7,6 @@ window.addEventListener("scroll", () => {
         head.classList.remove("scrolled");
     }
 });
-
-/*-----Checkbox-----*/
-let checkbox = document.getElementById("socials");
-let listCont = document.querySelector(".listCont");
-checkbox.checked = false;
-
-checkbox.addEventListener('change', function() {
-    if (this.checked) {
-        listCont.classList.add("opened");
-    } else {
-        listCont.classList.remove("opened");
-    }
-  });
 
 /*-----KonamiCode-----*/
 var konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
