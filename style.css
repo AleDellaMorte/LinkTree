@@ -102,7 +102,7 @@ header img {
     justify-content: center;
     top: 450px;
     width: clamp(150px, 50vw, 1000px);
-    gap: 3em;
+    gap: 2.5em;
     min-height: calc(100vh - 450px);
 }
 
