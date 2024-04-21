@@ -28,5 +28,5 @@ document.addEventListener('keydown', function(e) {
     });
   
 function easterEgg() {
-    window.location.href = "https://youtu.be/1JNmz17gnMw";
+    window.location.href = "https://youtu.be/FFC6RDX26ks?si=AuF43f-O7Zq1t5Iy";
 }
